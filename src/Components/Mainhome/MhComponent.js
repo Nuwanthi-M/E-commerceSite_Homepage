@@ -6,19 +6,17 @@ function MainhomeComponent1(props,style){
     return(
         <React.Fragment>
             <h1 className='py-5 home-heading'>
-                <strong>{props.frist1}<span style={{color: props.color}}>{props.frist2}</span></strong>
+                <strong><span style={{color: props.color1}}>{props.frist1}</span><span style={{color: props.color2}}>{props.frist2}</span></strong>
                     <br/>
-                <strong><span style={{color: props.color}}>{props.second1}</span>{props.second2}</strong>
+                <strong><span style={{color: props.color2}}>{props.second1}</span><span style={{color: props.color1}}>{props.second2}</span></strong>
                     <br/>
                 <strong>{props.third}</strong>
-                    <br/>
                 <strong>{props.forth}</strong>
-                    <br/>              
             </h1>
 
-                <p className='home-paragraph'>
-                    {props.pharagraph}
-                </p>
+            <p className='home-paragraph'>
+                {props.pharagraph}
+            </p>
 
             <div className='py-5'>
                 <button className='btn home-button'>{props.buttonname}</button>
@@ -40,7 +38,7 @@ function MainhomeComponent2(props){
                     <img className="play" src={props.cat1}  alt='item1' style={{top:'5%'}}/>
                     <img className="play" src={props.cat2}  alt='item2'  style={{top:'37%'}}/>
                     <img className="play" src={props.cat3}  alt='item3'  style={{top:'68%'}}/>
-                        <img src={props.cat} alt='mainitem' className="mainimage"/>
+                    <img src={props.cat} alt='mainitem' className="mainimage"/>
                 </div>
             </div>
         </React.Fragment>
