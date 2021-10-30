@@ -2,9 +2,9 @@
   width: 110px;
   height: auto;
 }
-li {
+.nav-item {
   font-family: "Roboto", sans-serif;
-  font-size: 23px;
+  font-size: 22px;
   padding: 10px 15px 5px 15px;
 }
 .login-button {
@@ -29,12 +29,20 @@ li {
   background-color: white;
   color: #f4633b;
 }
+.dropdown-menu {
+  background-color: #f6c06a;
+  width: 200px;
+  border-color: #f6c06a;
+}
+.dropdown-item:hover {
+  background-color: #f0cd95;
+}
 @media (max-width: 1250px) {
   .logo {
     width: 100px;
     height: auto;
   }
-  li {
+  .nav-item {
     font-size: 20px;
     padding: 3px 5px 5px 5px;
   }
@@ -52,9 +60,12 @@ li {
     width: 90px;
     height: auto;
   }
-  li {
-    font-size: 18px;
-    padding: 3px 5px 5px 5px;
+  .nav-item {
+    font-size: 19px;
+    text-align: center;
+  }
+  .nav-item:hover {
+    background-color: #f0cd95;
   }
   .login-button {
     font-size: 18px;
@@ -62,16 +73,29 @@ li {
   }
   .signup-button {
     width: 90px;
+  }
+  .dropdown-menu {
+    background-color: #f6c06a;
+    border-color: #f6c06a;
+    width: 100%;
+    text-align: center;
+  }
+  .dropdown-item:hover {
+    background-color: #f0cd95;
   }
 }
 @media (max-width: 767.98px) {
   .logo {
     width: 80px;
     height: auto;
+    padding-bottom: 20px;
   }
-  li {
+  .nav-item {
     font-size: 18px;
-    padding: 2px 5px 5px 5px;
+    text-align: center;
+  }
+  .nav-item:hover {
+    background-color: #f0cd95;
   }
   .login-button {
     font-size: 18px;
@@ -79,5 +103,14 @@ li {
   }
   .signup-button {
     width: 90px;
+  }
+  .dropdown-menu {
+    background-color: #f6c06a;
+    border-color: #f6c06a;
+    width: 100%;
+    text-align: center;
+  }
+  .dropdown-item:hover {
+    background-color: #f0cd95;
   }
 }

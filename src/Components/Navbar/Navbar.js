@@ -28,12 +28,12 @@ function Navbar() {
                     </li>
                             <li className="nav-item dropdown">
                 <a className="nav-link dropdown-toggle" href="#category" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    Dropdown
+                    Categories
                 </a>
-                <ul className="dropdown-menu" aria-labelledby="navbarDropdown" style={{borderRadius:'3%'}}>
-                    <li><a className="dropdown-item" href="#category">Action</a></li>
-                    <li><a className="dropdown-item" href="#category">Another action</a></li>
-                    <li><a className="dropdown-item" href="#category">Something else here</a></li>
+                <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a className="dropdown-item" href="#category">Food</a></li>
+                    <li><a className="dropdown-item" href="#category">Grocery</a></li>
+                    <li><a className="dropdown-item" href="#category">Health Care</a></li>
                 </ul>
                 </li>
                     
