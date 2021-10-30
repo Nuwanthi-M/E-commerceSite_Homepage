@@ -6,14 +6,14 @@ function MainhomeComponent1(props,style){
     return(
         <React.Fragment>
             <h1 className='py-5 home-heading'>
-                <strong>{props.frist1}</strong><strong style={{color: props.color}}>{props.frist2}
+                <strong>{props.frist1}<span style={{color: props.color}}>{props.frist2}</span></strong>
                     <br/>
-                {props.middle1}</strong>
-                <strong>{props.middle2}
-                <br/>
-                {props.last}
+                <strong><span style={{color: props.color}}>{props.second1}</span>{props.second2}</strong>
                     <br/>
-                {props.other}</strong>
+                <strong>{props.third}</strong>
+                    <br/>
+                <strong>{props.forth}</strong>
+                    <br/>              
             </h1>
 
                 <p className='home-paragraph'>

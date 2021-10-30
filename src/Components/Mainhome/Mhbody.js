@@ -118,8 +118,8 @@ function Homebody(){
     {/**Components used */}
                             <MainhomeComponent1
                                 frist1='Want To' frist2=' Earn Extra '
-                                middle1='Eith Us' middle2=' Join As a '
-                                last='Delivery Boy'
+                                second1='Eith Us' second2=' Join As a '
+                                third='Delivery Boy'
                                 pharagraph='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Est porta porttitor i suspendisse luctus 
                                     aliquet bibendum varius.Cras mr adipiscing elit. Est porta porttitor interdum tempus. Turpis aliquam' 
                                 buttonname='Apply Now'
@@ -150,9 +150,9 @@ function Homebody(){
     {/**Components reused */}
                         <MainhomeComponent1
                                 frist1='Want To' frist2=' Find More '
-                                middle1='Customers ' 
-                                last='Register Your'
-                                other='Shop/Resturent'
+                                second1='Customers ' 
+                                third='Register Your'
+                                forth='Shop/Resturent'
                                 pharagraph='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Est porta porttitor i suspendisse luctus 
                                     aliquet bibendum varius.Cras mr adipiscing elit. Est porta porttitor interdum tempus. Turpis aliquam' 
                                 buttonname='Join Now'
