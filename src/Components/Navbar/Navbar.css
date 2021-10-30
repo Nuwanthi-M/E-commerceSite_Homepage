@@ -35,8 +35,11 @@
 }
 .dropdown-menu {
   background-color: #f6c06a;
-  width: 200px;
+  width: 220px;
   border-color: #f6c06a;
+}
+.dropdown-item {
+  font-size: 22px;
 }
 .dropdown-item:hover {
   background-color: #f0cd95;
@@ -49,6 +52,9 @@
   .nav-item {
     font-size: 20px;
     padding: 3px 5px 5px 5px;
+  }
+  .dropdown-item {
+    font-size: 20px;
   }
   .login-button {
     font-size: 18px;
@@ -84,8 +90,8 @@
     width: 100%;
     text-align: center;
   }
-  .dropdown-item:hover {
-    background-color: #f0cd95;
+  .dropdown-item {
+    font-size: 19px;
   }
 }
 @media (max-width: 767.98px) {
@@ -113,6 +119,9 @@
     border-color: #f6c06a;
     width: 100%;
     text-align: center;
+  }
+  .dropdown-item {
+    font-size: 18px;
   }
   .dropdown-item:hover {
     background-color: #f0cd95;

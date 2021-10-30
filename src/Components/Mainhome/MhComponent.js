@@ -7,9 +7,12 @@ function MainhomeComponent1(props,style){
         <React.Fragment>
             <h1 className='py-5 home-heading'>
                 <strong>{props.frist1}</strong><strong style={{color: props.color}}>{props.frist2}
+                    <br/>
                 {props.middle1}</strong>
                 <strong>{props.middle2}
+                <br/>
                 {props.last}
+                    <br/>
                 {props.other}</strong>
             </h1>
 
