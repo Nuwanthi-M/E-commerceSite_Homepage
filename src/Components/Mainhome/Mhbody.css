@@ -42,20 +42,17 @@
   position: relative;
 }
 .mainimage {
-  width: 350px;
-  height: 450px;
+  width: 320px;
+  height: 420px;
   border-radius: 20px;
-  box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+  box-shadow: rgba(0, 0, 0, 0.56) 7px 7px 7px 7px;
 }
 
 .play {
   position: absolute;
-  width: 220px;
-  height: 115px;
+  width: 200px;
+  height: 105px;
   left: 50%;
-  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
-    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
-    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
   border-radius: 15px;
 }
 .category-button {
@@ -71,11 +68,11 @@
 }
 @media (max-width: 1399.98px) {
   .mainimage {
-    width: 280px;
-    height: 380px;
+    width: 270px;
+    height: 370px;
   }
   .play {
-    width: 200px;
+    width: 175px;
     height: 105px;
   }
   .sub-image {
@@ -116,12 +113,13 @@
     border: 5px solid rgb(230, 58, 6);
   }
   .mainimage {
-    width: 260px;
-    height: 360px;
+    width: 240px;
+    height: 340px;
+    box-shadow: rgba(0, 0, 0, 0.56) 3px 3px 3px 3px;
   }
   .play {
-    width: 170px;
-    height: 89px;
+    width: 140px;
+    height: 80px;
   }
   .sub-image {
     width: 450px;
@@ -159,11 +157,12 @@
     width: 40px;
   }
   .mainimage {
-    width: 200px;
-    height: 300px;
+    width: 180px;
+    height: 280px;
+    box-shadow: rgba(0, 0, 0, 0.56) 2px 2px 2px 2px;
   }
   .play {
-    width: 120px;
+    width: 105px;
     height: 63px;
   }
   .sub-image {
@@ -203,12 +202,12 @@
     width: 50px;
   }
   .mainimage {
-    width: 300px;
-    height: 400px;
+    width: 330px;
+    height: 430px;
   }
   .play {
-    width: 200px;
-    height: 105px;
+    width: 205px;
+    height: 107px;
   }
   .sub-image {
     width: 530px;

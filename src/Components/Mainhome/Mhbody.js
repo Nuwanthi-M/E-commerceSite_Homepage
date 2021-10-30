@@ -1,5 +1,6 @@
 import React from "react";
 import {MainhomeComponent1,MainhomeComponent2}from './MhComponent';
+import Carousel from 'react-grid-carousel';
 import './Mhbody.css';
 import home1 from '../images/home1.png';
 import home2 from '../images/home2.png';
@@ -20,6 +21,7 @@ import medicine from '../images/medicine.png';
 import medicine1 from '../images/medicine1.png';
 import medicine2 from '../images/medicine2.png';
 import medicine3 from '../images/medicine3.png';
+import Footer from "../Footer/Footer";
 function Homebody(){
     return(
         
@@ -56,7 +58,7 @@ function Homebody(){
                 <div className='container-fluid' style={{backgroundColor: 'white'}}>
                     <div className='container'>
                         <div className='row py-5'>
-                            <div className='col-12 col-lg-4 col-md-4 col-sm-12 '>
+                          {/*  <div className='col-12 col-lg-4 col-md-4 col-sm-12 '>
                                 <MainhomeComponent2 cat={food}  cat1={food1} cat2={food2} cat3={food3} categoryname='Food'/>
                             </div>
                             <div className='col-12 col-lg-4 col-md-4 col-sm-12 '>
@@ -64,7 +66,40 @@ function Homebody(){
                             </div>
                             <div className='col-12 col-lg-4 col-md-4 col-sm-12 '>
                                 <MainhomeComponent2 cat={medicine}  cat1={medicine1} cat2={medicine2} cat3={medicine3} categoryname='HealthCare'/>
-                            </div>
+                             </div>*/}
+                              <Carousel
+                                    cols={3}
+                                    rows={1}
+                                    gap={10}
+
+                                    responsiveLayout={[
+                                        {
+                                        breakpoint: 1200,
+                                        cols: 3
+                                        },
+                                        {
+                                        breakpoint: 990,
+                                        cols: 3
+                                        },
+                                        {
+                                            breakpoint: 768,
+                                            cols: 1
+                                        }
+                                    ]}
+                                    mobileBreakpoint={500}
+
+                                    >
+                                            <Carousel.Item >
+                                            <MainhomeComponent2 cat={food}  cat1={food1} cat2={food2} cat3={food3} categoryname='Food'/>
+                                            </Carousel.Item>
+                                            <Carousel.Item>
+                                            <MainhomeComponent2 cat={grocery} cat1={grocery1} cat2={grocery2} cat3={grocery3} categoryname='Grocery'/>
+                                            </Carousel.Item>
+                                            <Carousel.Item>
+                                            <MainhomeComponent2 cat={medicine}  cat1={medicine1} cat2={medicine2} cat3={medicine3} categoryname='HealthCare'/>
+                                            </Carousel.Item>
+                                            </Carousel>
+
                         </div>
                     </div>
                 </div>
@@ -158,6 +193,7 @@ function Homebody(){
                 </div>
           </div>
 {/**Ending fifth Row */}
+            <Footer/>
 </React.Fragment>
 
         

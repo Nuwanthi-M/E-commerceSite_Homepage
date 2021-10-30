@@ -40,6 +40,7 @@ function MainhomeComponent2(props){
                     <img className="play" src={props.cat3}  alt='item3'  style={{top:'68%'}}/>
                     <img src={props.cat} alt='mainitem' className="mainimage"/>
                 </div>
+                <br/><br/>
             </div>
         </React.Fragment>
         );
