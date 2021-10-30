@@ -1,6 +1,7 @@
 import React from "react";
 import './Navbar.css';
 import logo from '../images/logo.png';
+import toggle from '../images/toggle.png';
 import 'font-awesome/css/font-awesome.min.css';
 import {Link} from 'react-router-dom';
 function Navbar() {
@@ -13,7 +14,8 @@ function Navbar() {
                     <img src={logo} alt='logo' className='logo'/>{/**Include Logo Image */}
                 </a>
                     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                        <span className="navbar-toggler-icon" ></span>
+                        <span> <img src={toggle} alt='logo' className='toggle'/></span>
+
                     </button>{/**Including Toggle Menu */}
 
             <div className="collapse navbar-collapse" id="navbarSupportedContent">

@@ -7,12 +7,9 @@ function MainhomeComponent1(props,style){
         <React.Fragment>
             <h1 className='py-5 home-heading'>
                 <strong>{props.frist1}</strong><strong style={{color: props.color}}>{props.frist2}
-                    <br/>
                 {props.middle1}</strong>
                 <strong>{props.middle2}
-                <   br/>
                 {props.last}
-                    <br/>
                 {props.other}</strong>
             </h1>
 
@@ -31,16 +28,16 @@ function MainhomeComponent2(props){
         <React.Fragment>
             <div className='text-center'>
                 <div className='text-center py-4'>
-                    <button className='btn' style={{borderRadius:'30px',backgroundColor:'#F6C06A',width:'200px',height:'50px'}}>
-                        <img src={bell} alt='bell icon' style={{width:'26px',height:'26px',paddingRight:'1px'}}/><span>   {props.categoryname}</span>
+                    <button className='btn category-button'>
+                        <img src={bell} alt='bell icon' className='bell-icon'/><span>{props.categoryname}</span>
                     </button> 
                 </div>
 
                 <div className="wrapper">
-                    <img className="play" src={props.cat1}  alt='dkkdk' style={{top:'5%'}}/>
-                    <img className="play" src={props.cat2}  alt='dkkdk'  style={{top:'37%'}}/>
-                    <img className="play" src={props.cat3}  alt='dkkdk'  style={{top:'68%'}}/>
-                        <img src={props.cat} alt='dkkdk' className="styim"/>
+                    <img className="play" src={props.cat1}  alt='item1' style={{top:'5%'}}/>
+                    <img className="play" src={props.cat2}  alt='item2'  style={{top:'37%'}}/>
+                    <img className="play" src={props.cat3}  alt='item3'  style={{top:'68%'}}/>
+                        <img src={props.cat} alt='mainitem' className="mainimage"/>
                 </div>
             </div>
         </React.Fragment>

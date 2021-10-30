@@ -30,7 +30,7 @@ function Homebody(){
                     <div className='container'>
                         <div className='row row-style'>
 
-                            <div className='col-12 col-lg-6 col-md-6 col-style'>
+                            <div className='col-12 col-lg-5 col-md-5 col-style'>
                                 <h1 className='py-5 home-heading'>
                                     <strong style={{color:'#FE432E'}}>Get</strong><strong> Product In<br/>A </strong><strong style={{color:'#FE432E'}}>Easy Way</strong>
                                 </h1>
@@ -43,8 +43,8 @@ function Homebody(){
                                 </div>
                             </div>
 
-                            <div className='col-12 col-lg-6 col-md-6 text-center'>
-                                <img src={home1} alt='home' className='py-5 home-image ' style={{shadowColor: "#000"}}/>
+                            <div className='col-12 col-lg-7 col-md-7 text-center'>
+                                <img src={home1} alt='home' className='py-5 home-image ' />
                             </div>
 
                         </div>
@@ -80,16 +80,16 @@ function Homebody(){
                 <div className='container'>
                     <div className='row row-style'>
 
-                        <div className='col-sm-12 col-md-6 col-lg-6 order-sm-2 order-lg-1 order-md-1'>
-                            <img src={home2} alt='shopping' className='py-5 home-image'/>
+                        <div className='col-sm-12 col-md-7 col-lg-6 order-sm-2 order-lg-1 order-md-1'>
+                            <img src={home2} alt='shopping' className='py-5 sub-image'/>
                         </div>
 
-                        <div className='col-sm-12 col-md-6 col-lg-6 order-sm-1  order-lg-2 order-md-2'>
+                        <div className='col-sm-12 col-md-5 col-lg-6 order-sm-1  order-lg-2 order-md-2'>
                             <h1 className='py-5  home-heading'>
                                 <strong>
                                     <span style={{color:'#FE432E'}}>
-                                        Simple Process to
-                                    </span><br/>Make Order Your<br/>Favourite Foods/
+                                        Simple Process
+                                    </span><br/> to Make Order Your Favourite Foods/
                                 </strong>
                             </h1>
                             <p className='process'><b>Step 1</b> <span style={{paddingLeft:'5px'}}><img src={icon1} alt='location'  className='processlogo'/></span><span style={{paddingLeft:'5px'}}> Set Your Location Frist</span></p> 
@@ -114,11 +114,11 @@ function Homebody(){
             <div className='container-fluid' style={{backgroundColor:'#FE432E'}}>
                 <div className='container'>
                     <div className='row row-style' >
-                        <div className='col-12 col-lg-6 col-md-6'>
+                        <div className='col-12 col-lg-6 col-md-5'>
     {/**Components used */}
                             <MainhomeComponent1
-                                frist1='Want To' frist2=' Earn Extra'
-                                middle1='Eith Us' middle2=' Join As a'
+                                frist1='Want To' frist2=' Earn Extra '
+                                middle1='Eith Us' middle2=' Join As a '
                                 last='Delivery Boy'
                                 pharagraph='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Est porta porttitor i suspendisse luctus 
                                     aliquet bibendum varius.Cras mr adipiscing elit. Est porta porttitor interdum tempus. Turpis aliquam' 
@@ -127,8 +127,8 @@ function Homebody(){
     {/**Components used */}
                         </div>
                             
-                        <div className='col-12 col-lg-6 col-md-6'>
-                            <img src={home3} alt='shopping'className='py-5 home-image'/>
+                        <div className='col-12 col-lg-6 col-md-7'>
+                            <img src={home3} alt='shopping'className='py-5 sub-image'/>
                         </div>
                     </div>
                 </div>
@@ -142,15 +142,15 @@ function Homebody(){
             <div className='container-fluid' style={{backgroundColor: '#F8F7E9'}}>
                 <div className='container'>
                     <div className='row row-style'>
-                        <div className='col-12 col-lg-6 col-md-6 order-sm-2 order-lg-1 order-md-1'>
-                            <img src={home4} alt='shopping' className='py-5 home-image'/>
+                        <div className='col-12 col-lg-6 col-md-7 order-sm-2 order-lg-1 order-md-1'>
+                            <img src={home4} alt='shopping' className='py-5 sub-image'/>
                         </div>
                             
-                        <div className='col-12 col-lg-6 col-md-6  order-sm-1 order-lg-2 order-md-2'>
+                        <div className='col-12 col-lg-6 col-md-5  order-sm-1 order-lg-2 order-md-2'>
     {/**Components reused */}
                         <MainhomeComponent1
-                                frist1='Want To' frist2=' Find More'
-                                middle1='Customers' 
+                                frist1='Want To' frist2=' Find More '
+                                middle1='Customers ' 
                                 last='Register Your'
                                 other='Shop/Resturent'
                                 pharagraph='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Est porta porttitor i suspendisse luctus 

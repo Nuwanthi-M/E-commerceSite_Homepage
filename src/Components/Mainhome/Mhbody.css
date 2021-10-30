@@ -24,6 +24,10 @@
   width: 630px;
   height: auto;
 }
+.sub-image {
+  width: 580px;
+  height: auto;
+}
 .processlogo {
   width: 50px;
   height: auto;
@@ -34,8 +38,53 @@
   font-size: 20px;
   font-weight: 400;
 }
+.wrapper {
+  position: relative;
+}
+.mainimage {
+  width: 350px;
+  height: 450px;
+  border-radius: 20px;
+  box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+}
 
-@media (max-width: 1250px) {
+.play {
+  position: absolute;
+  width: 220px;
+  height: 115px;
+  left: 50%;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  border-radius: 15px;
+}
+.category-button {
+  border-radius: 30px;
+  background-color: #f6c06a;
+  width: 150px;
+  height: 50px;
+}
+.bell-icon {
+  width: 23px;
+  height: 23px;
+  margin-right: 13px;
+}
+@media (max-width: 1399.98px) {
+  .mainimage {
+    width: 280px;
+    height: 380px;
+  }
+  .play {
+    width: 200px;
+    height: 105px;
+  }
+  .sub-image {
+    width: 520px;
+    height: auto;
+  }
+}
+
+@media (max-width: 1199.98px) {
   .row-style {
     padding-top: 15px;
   }
@@ -53,7 +102,7 @@
     height: 45px;
   }
   .home-image {
-    width: 500px;
+    width: 520px;
     height: auto;
   }
   .process {
@@ -66,27 +115,40 @@
     border-radius: 100%;
     border: 5px solid rgb(230, 58, 6);
   }
+  .mainimage {
+    width: 260px;
+    height: 360px;
+  }
+  .play {
+    width: 170px;
+    height: 89px;
+  }
+  .sub-image {
+    width: 450px;
+    height: auto;
+  }
 }
 
-@media (max-width: 992px) {
+@media (max-width: 991.98px) {
   .row-style {
     padding-top: 15px;
   }
   .col-style {
-    padding-top: 60px;
+    padding-top: 30px;
   }
   .home-heading {
-    font-size: 30px;
+    font-size: 35px;
   }
   .home-paragraph {
-    font-size: 16px;
+    font-size: 17px;
   }
   .home-button {
-    width: 150px;
-    height: 45px;
+    width: 140px;
+    height: 40px;
+    font-size: 16px;
   }
   .home-image {
-    width: 450px;
+    width: 430px;
     height: auto;
   }
   .process {
@@ -95,6 +157,18 @@
   }
   .processlogo {
     width: 40px;
+  }
+  .mainimage {
+    width: 200px;
+    height: 300px;
+  }
+  .play {
+    width: 120px;
+    height: 63px;
+  }
+  .sub-image {
+    width: 400px;
+    height: auto;
   }
 }
 
@@ -128,21 +202,16 @@
   .processlogo {
     width: 50px;
   }
-}
-.wrapper {
-  position: relative;
-}
-.styim {
-  width: 350px;
-  height: 450px;
-  border-radius: 20px;
-}
-
-.play {
-  position: absolute;
-  width: 220px;
-  height: 115px;
-  left: 50%;
-  /*border: 3px solid whitesmoke;*/
-  border-radius: 15px;
+  .mainimage {
+    width: 300px;
+    height: 400px;
+  }
+  .play {
+    width: 200px;
+    height: 105px;
+  }
+  .sub-image {
+    width: 530px;
+    height: auto;
+  }
 }
