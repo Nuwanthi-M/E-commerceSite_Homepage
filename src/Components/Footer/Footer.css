@@ -2,23 +2,27 @@ ul {
   list-style-type: none;
 }
 li {
-  font-size: 21px;
+  font-size: 19px;
   margin-top: 10px;
 }
 .socialmedia {
-  padding: 0pc 10px 0px 10px;
+  padding: 0pc 7px 0px 7px;
   color: black;
 }
+
 @media (max-width: 992px) {
   li {
-    font-size: 19px;
+    font-size: 18px;
     margin-top: 10px;
+  }
+  .socialmedia {
+    padding: 0px 10px 0px 10px;
   }
 }
 
 @media (max-width: 767.98px) {
   li {
-    font-size: 19px;
+    font-size: 18px;
     margin-top: 10px;
     text-align: center;
   }

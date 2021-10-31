@@ -30,9 +30,9 @@ function Homebody(){
 {/**Frist Container,Calling navbar component */}
                 <div className='container-fluid' style={{backgroundImage:' linear-gradient(180deg, #F6C06A 0%, rgba(254, 141, 110, 0) 100%)'}} >
                     <div className='container'>
-                        <div className='row row-style'>
-
-                            <div className='col-12 col-lg-5 col-md-5 col-style'>
+                    <div className='row row-style'></div>
+                        <div className='row'>
+                            <div className='col-12 col-lg-5 col-md-6'>
                      {/**Components used */}
                             <MainhomeComponent1
                                 frist1='Get ' frist2='Product'
@@ -44,8 +44,8 @@ function Homebody(){
                      {/**Components used */}
                             </div>
 
-                            <div className='col-12 col-lg-7 col-md-7 text-center'>
-                                <img src={home1} alt='home' className='py-5 home-image ' />
+                            <div className='col-12 col-lg-7 col-md-6 text-center'>
+                                <img src={home1} alt='home' className='home-image ' />
                             </div>
 
                         </div>
@@ -112,21 +112,22 @@ function Homebody(){
 {/**Starting third Row */}
             <div className='container-fluid' style={{backgroundColor: '#F8F7E9'}}>
                 <div className='container'>
-                    <div className='row row-style'>
+                    <div className='row'>
                         
-                        <div className='col-sm-12 col-md-7 col-lg-6 order-sm-2 order-lg-1 order-md-1'>
+                        <div className='col-sm-12 col-md-6 col-lg-6 order-sm-2 order-lg-1 order-md-1'>
                             <img src={home2} alt='shopping' className='py-5 sub-image'/>
                         </div>
 
-                        <div className='col-sm-12 col-md-5 col-lg-6 order-sm-1  order-lg-2 order-md-2'>
-                            <h1 className='py-5  home-heading'>
+                        <div className='col-sm-12 col-md-6 col-lg-6 order-sm-1  order-lg-2 order-md-2'>
+                            <h1 className='py-3  home-heading'>
                                 <strong><span style={{color:'#FE432E'}}>Simple Process </span><span>To</span><br/>Make Order Your Favourite Foods/</strong>
                             </h1>
+                            <br/>
                             <p className='process'><b>Step 1</b> <span style={{paddingLeft:'5px'}}><img src={icon1} alt='location'  className='processlogo'/></span><span style={{paddingLeft:'5px'}}> Set Your Location Frist</span></p> 
                             <p className='process'><b>Step 2</b> <span style={{paddingLeft:'5px'}}><img src={icon3} alt='location' className='processlogo'/> </span><span style={{paddingLeft:'5px'}}>  Choose the Food You Want to Order</span></p> 
                             <p className='process'><b>Step 3</b> <span style={{paddingLeft:'5px'}}><img src={icon2} alt='location' className='processlogo'/> </span><span style={{paddingLeft:'5px'}}>  Confirm Order with Payment Method</span></p> 
                           
-                            <div className='py-5'>
+                            <div className='py-4'>
                                 <button className='btn home-button'>Order Now</button>
                             </div>
                         </div>
@@ -143,8 +144,8 @@ function Homebody(){
 {/**Starting forth Row */}
             <div className='container-fluid' style={{backgroundColor:'#FE432E'}}>
                 <div className='container'>
-                    <div className='row row-style' >
-                        <div className='col-12 col-lg-6 col-md-5'>
+                    <div className='row' >
+                        <div className='col-12 col-lg-6 col-md-6'>
     {/**Components used */}
                             <MainhomeComponent1
                                 frist1='Want To' frist2=' Earn Extra '
@@ -157,7 +158,7 @@ function Homebody(){
     {/**Components used */}
                         </div>
                             
-                        <div className='col-12 col-lg-6 col-md-7'>
+                        <div className='col-12 col-lg-6 col-md-6'>
                             <img src={home3} alt='shopping'className='py-5 sub-image'/>
                         </div>
                     </div>
@@ -171,12 +172,12 @@ function Homebody(){
 {/**Starting fifth Row */}
             <div className='container-fluid' style={{backgroundColor: '#F8F7E9'}}>
                 <div className='container'>
-                    <div className='row row-style'>
-                        <div className='col-12 col-lg-6 col-md-7 order-sm-2 order-lg-1 order-md-1'>
+                    <div className='row'>
+                        <div className='col-12 col-lg-6 col-md-6 order-sm-2 order-lg-1 order-md-1'>
                             <img src={home4} alt='shopping' className='py-5 sub-image'/>
                         </div>
                             
-                        <div className='col-12 col-lg-6 col-md-5  order-sm-1 order-lg-2 order-md-2'>
+                        <div className='col-12 col-lg-6 col-md-6 order-sm-1 order-lg-2 order-md-2'>
     {/**Components reused */}
                         <MainhomeComponent1
                                 frist1='Want To' frist2=' Find More '

@@ -1,11 +1,9 @@
 .row-style {
-  padding-top: 50px;
-}
-.col-style {
-  padding-top: 130px;
+  height: 100px;
 }
 .home-heading {
   font-size: 55px;
+  margin-top: 80px;
 }
 .home-paragraph {
   font-size: 20px;
@@ -21,12 +19,16 @@
   background-color: #f5edc2;
 }
 .home-image {
-  width: 630px;
+  max-width: 630px;
   height: auto;
+  margin-top: 40px;
+  margin-bottom: 100px;
 }
 .sub-image {
   width: 580px;
   height: auto;
+  margin-top: 100px;
+  margin-bottom: 30px;
 }
 .processlogo {
   width: 50px;
@@ -78,18 +80,18 @@
   .sub-image {
     width: 520px;
     height: auto;
+    margin-top: 40px;
+    margin-bottom: 80px;
   }
 }
 
 @media (max-width: 1199.98px) {
   .row-style {
-    padding-top: 15px;
-  }
-  .col-style {
-    padding-top: 60px;
+    height: 70px;
   }
   .home-heading {
-    font-size: 45px;
+    font-size: 47px;
+    margin-top: 40px;
   }
   .home-paragraph {
     font-size: 18px;
@@ -101,6 +103,8 @@
   .home-image {
     width: 520px;
     height: auto;
+    margin-top: 30px;
+    margin-bottom: 50px;
   }
   .process {
     font-size: 18px;
@@ -124,21 +128,21 @@
   .sub-image {
     width: 450px;
     height: auto;
+    margin-top: 40px;
+    margin-bottom: 50px;
   }
 }
 
 @media (max-width: 991.98px) {
   .row-style {
-    padding-top: 15px;
-  }
-  .col-style {
-    padding-top: 30px;
+    margin-top: 0px;
   }
   .home-heading {
-    font-size: 32px;
+    font-size: 36px;
+    margin-top: 30px;
   }
   .home-paragraph {
-    font-size: 17px;
+    font-size: 18px;
   }
   .home-button {
     width: 140px;
@@ -146,7 +150,7 @@
     font-size: 16px;
   }
   .home-image {
-    width: 430px;
+    max-width: 400px;
     height: auto;
   }
   .process {
@@ -154,7 +158,7 @@
     font-weight: 400;
   }
   .processlogo {
-    width: 40px;
+    width: 30px;
   }
   .mainimage {
     width: 180px;
@@ -166,21 +170,21 @@
     height: 63px;
   }
   .sub-image {
-    width: 400px;
+    width: 350px;
     height: auto;
+    margin-top: 110px;
+    margin-bottom: 30px;
   }
 }
 
 @media (max-width: 767.98px) {
   .row-style {
-    padding-top: 40px;
-  }
-  .col-style {
-    padding-top: 0px;
+    height: 0px;
   }
   .home-heading {
     font-size: 45px;
     text-align: center;
+    margin-top: 60px;
   }
   .home-paragraph {
     font-size: 18px;
@@ -191,8 +195,10 @@
     height: 50px;
   }
   .home-image {
-    width: 520px;
+    max-width: 530px;
     height: auto;
+    margin-top: 30px;
+    margin-bottom: 50px;
   }
   .process {
     font-size: 18px;
@@ -210,7 +216,9 @@
     height: 107px;
   }
   .sub-image {
-    width: 530px;
+    width: 510px;
     height: auto;
+    margin-top: 0px;
+    margin-bottom: 0px;
   }
 }

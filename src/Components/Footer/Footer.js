@@ -15,7 +15,7 @@ function Footer(){
                             <div className='col-12 col-lg-4 col-md-4 col-sm-12'>
                                 
                                 <ul className=''>
-                                    <li><h3>Links</h3></li><br/>
+                                    <li><h4>Links</h4></li><br/>
                                     <li><Link to='./mhbody'  style={{textDecoration:'none',color:'black'}}>Home</Link></li>
                                     <li><Link to='./mhbody' style={{textDecoration:'none',color:'black'}}>About</Link></li>
                                     <li><Link to='./mhbody' style={{textDecoration:'none',color:'black'}}>Categorey</Link></li>
@@ -25,7 +25,7 @@ function Footer(){
                             <div className='col-12 col-lg-4 col-md-4 col-sm-12 '>
             
                                 <ul>
-                                    <li><h3>Help</h3></li><br/>
+                                    <li><h4>Help</h4></li><br/>
                                     <li><Link to='./mhbody' style={{textDecoration:'none',color:'black'}}>Contact Us</Link></li>
                                     <li><Link to='./mhbody' style={{textDecoration:'none',color:'black'}}>Support</Link></li>
                                     <li><Link to='./mhbody' style={{textDecoration:'none',color:'black'}}>F&Q</Link></li>
@@ -41,11 +41,11 @@ function Footer(){
                             <div className='col-12 col-lg-4 col-md-4 col-sm-12 '></div>
                             <div className='col-12 col-lg-4 col-md-4 col-sm-12 text-center'>
                                 <a href="https://www.facebook.com/learnbuildteach/" className="facebook social">
-                                                        <FontAwesomeIcon icon={faFacebook} className='socialmedia' size="5x"/>
+                                                        <FontAwesomeIcon icon={faFacebook} className='socialmedia' size="4x"/>
                                                     </a>
                                                                             
                                 <a href="https://www.instagram.com/learnbuildteach" className="instagram social">
-                                                        <FontAwesomeIcon icon={faInstagram} className='socialmedia' size="5x" />
+                                                        <FontAwesomeIcon icon={faInstagram} className='socialmedia' size="4x" />
                                                     </a>
                                                     <br/><br/><br/>
                         

@@ -5,7 +5,7 @@ import bell from '../images/bell.png';
 function MainhomeComponent1(props,style){
     return(
         <React.Fragment>
-            <h1 className='py-5 home-heading'>
+            <h1 className='py-3 home-heading'>
                 <strong><span style={{color: props.color1}}>{props.frist1}</span><span style={{color: props.color2}}>{props.frist2}</span></strong>
                     <br/>
                 <strong><span style={{color: props.color2}}>{props.second1}</span><span style={{color: props.color1}}>{props.second2}</span></strong>
@@ -14,11 +14,11 @@ function MainhomeComponent1(props,style){
                 <strong>{props.forth}</strong>
             </h1>
 
-            <p className='home-paragraph'>
+            <p className=' py-4 home-paragraph'>
                 {props.pharagraph}
             </p>
 
-            <div className='py-5'>
+            <div className='py-4'>
                 <button className='btn home-button'>{props.buttonname}</button>
             </div>
         </React.Fragment>
