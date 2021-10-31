@@ -9,7 +9,16 @@ li {
   padding: 0pc 7px 0px 7px;
   color: black;
 }
-
+.footerlogo {
+  max-width: 360px;
+  height: auto;
+}
+@media (max-width: 1199.98px) {
+  .footerlogo {
+    max-width: 300px;
+    height: auto;
+  }
+}
 @media (max-width: 992px) {
   li {
     font-size: 18px;
@@ -18,6 +27,10 @@ li {
   .socialmedia {
     padding: 0px 10px 0px 10px;
   }
+  .footerlogo {
+    max-width: 200px;
+    height: auto;
+  }
 }
 
 @media (max-width: 767.98px) {
@@ -25,5 +38,9 @@ li {
     font-size: 18px;
     margin-top: 10px;
     text-align: center;
+  }
+  .footerlogo {
+    max-width: 120px;
+    height: auto;
   }
 }

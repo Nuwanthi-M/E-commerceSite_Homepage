@@ -5,14 +5,18 @@ import {
     faFacebook,
     faInstagram
   }from "@fortawesome/free-brands-svg-icons";
-  import {Link} from 'react-router-dom';
+import {Link} from 'react-router-dom';
+import Footerlogo from '../images/Footerlogo.png';
 function Footer(){
     return(
         <React.Fragment>
                   <div className='container-fluid' style={{backgroundColor: 'whitesmoke'}}>
                     <div className='container'>
                         <div className='row py-5'>
-                            <div className='col-12 col-lg-4 col-md-4 col-sm-12'>
+                        <div className='col-12 col-lg-4 col-sm-12'>
+                            <img src={Footerlogo} alt='footer' className='footerlogo'/>
+                        </div>
+                            <div className='col-12 col-lg-3 col-md-4 col-sm-12'>
                                 
                                 <ul className=''>
                                     <li><h4>Links</h4></li><br/>
@@ -22,7 +26,7 @@ function Footer(){
                                     </ul>
                             </div>
                      
-                            <div className='col-12 col-lg-4 col-md-4 col-sm-12 '>
+                            <div className='col-12 col-lg-3 col-md-4 col-sm-12 '>
             
                                 <ul>
                                     <li><h4>Help</h4></li><br/>
@@ -32,7 +36,7 @@ function Footer(){
                                     </ul>
                             </div>
                         
-                            <div className='col-12 col-lg-4 col-md-4 col-sm-12 '></div>
+                            <div className='col-12 col-lg-2 col-md-4 col-sm-12 '></div>
                         </div>
 
 
