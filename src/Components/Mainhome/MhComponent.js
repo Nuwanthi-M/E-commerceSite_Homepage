@@ -19,7 +19,7 @@ function MainhomeComponent1(props,style){
             </p>
 
             <div className='py-4'>
-                <button className='btn home-button'>{props.buttonname}</button>
+                <button className='btn  btn-default home-button'  onClick={props.handleClick}>{props.label}</button>
             </div>
         </React.Fragment>
         );

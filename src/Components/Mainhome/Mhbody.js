@@ -39,8 +39,9 @@ function Homebody(){
                                 second1='In A ' second2='Easy Way'
                                 pharagraph='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Est porta porttitor i suspendisse luctus 
                                     aliquet bibendum varius.Cras mr adipiscing elit. Est porta porttitor interdum tempus. Turpis aliquam' 
-                                buttonname='Register Now'
-                                color1='#FD402C'/>
+                                label='Register Now'
+                                color1='#FD402C'
+                                handleClick={() => alert("Customer Registration will open!")}/>
                      {/**Components used */}
                             </div>
 
@@ -128,7 +129,7 @@ function Homebody(){
                             <p className='process'><b>Step 3</b> <span style={{paddingLeft:'5px'}}><img src={icon2} alt='location' className='processlogo'/> </span><span style={{paddingLeft:'5px'}}>  Confirm Order with Payment Method</span></p> 
                           
                             <div className='py-4'>
-                                <button className='btn home-button'>Order Now</button>
+                                <button className='btn home-button' onClick={() => alert("Ordering page will open!")}>Order Now</button>
                             </div>
                         </div>
 
@@ -153,8 +154,10 @@ function Homebody(){
                                 third='Delivery Boy'
                                 pharagraph='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Est porta porttitor i suspendisse luctus 
                                     aliquet bibendum varius.Cras mr adipiscing elit. Est porta porttitor interdum tempus. Turpis aliquam' 
-                                buttonname='Apply Now'
-                                color2='white'/>
+                                label='Apply Now'
+                                color2='white'
+                                handleClick={() => alert("Deliverer Registration will open!")}
+                                />
     {/**Components used */}
                         </div>
                             
@@ -186,8 +189,9 @@ function Homebody(){
                                 forth='Shop/Resturent'
                                 pharagraph='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Est porta porttitor i suspendisse luctus 
                                     aliquet bibendum varius.Cras mr adipiscing elit. Est porta porttitor interdum tempus. Turpis aliquam' 
-                                buttonname='Join Now'
-                                color2='#F5643C'/>
+                                label='Join Now'
+                                color2='#F5643C'
+                                handleClick={() => alert("Shop Registration will open!")}/>
     {/**Components reused */}
                         </div>
                     </div>

@@ -11,12 +11,15 @@
 .home-button {
   width: 200px;
   height: 50px;
+  border-color: #32303a;
   background-color: #32303a;
   color: #f8b742;
+  border-radius: 5px;
 }
 .home-button:hover {
-  color: #131111;
-  background-color: #f5edc2;
+  color: #141414;
+  background-color: #b4b1af;
+  border-color: #b4b1af;
 }
 .home-image {
   max-width: 630px;

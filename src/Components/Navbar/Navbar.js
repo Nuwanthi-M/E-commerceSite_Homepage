@@ -48,10 +48,10 @@ function Navbar() {
                         <i className="fa fa-shopping-cart"></i>
                     </li>
                     <li className="nav-item">
-                        <button type="button" className="btn login-button">Log In</button>
+                        <button type="button" className="btn login-button" onClick={() => alert("Customer/Deliverer/shop page will open!")}>Log In</button>
                     </li>
                     <li className="nav-item">
-                        <button type="button"className='btn signup-button'>Sign Up</button>
+                        <button type="button"className='btn signup-button' onClick={() => alert("Customer/Deliverer/shoppage will open!")}>Sign Up</button>
                     </li>
                 </ul>
              {/* Right Side Links*/ }
