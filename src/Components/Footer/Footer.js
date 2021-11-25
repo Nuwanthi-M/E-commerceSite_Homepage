@@ -20,7 +20,7 @@ function Footer(){
                                 
                                 <ul className=''>
                                     <li><h4>Links</h4></li><br/>
-                                    <li><Link to='./mhbody'  style={{textDecoration:'none',color:'black'}}>Home</Link></li>
+                                    <li><Link to='/'  style={{textDecoration:'none',color:'black'}}>Home</Link></li>
                                     <li><Link to='./mhbody' style={{textDecoration:'none',color:'black'}}>About</Link></li>
                                     <li><Link to='./mhbody' style={{textDecoration:'none',color:'black'}}>Categorey</Link></li>
                                     </ul>

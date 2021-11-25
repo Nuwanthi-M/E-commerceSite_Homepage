@@ -4,7 +4,9 @@ import logo from '../images/logo.png';
 import toggle from '../images/toggle.png';
 import 'font-awesome/css/font-awesome.min.css';
 import {Link} from 'react-router-dom';
+import { useHistory } from 'react-router-dom';
 function Navbar() {
+    const history = useHistory();
   return (
        
     <React.Fragment>
@@ -48,10 +50,10 @@ function Navbar() {
                         <i className="fa fa-shopping-cart"></i>
                     </li>
                     <li className="nav-item">
-                        <button type="button" className="btn login-button" onClick={() => alert("Customer/Deliverer/shop page will open!")}>Log In</button>
+                        <button type="button" className="btn login-button" onClick={() => history.push('/login')}>Log In</button>
                     </li>
                     <li className="nav-item">
-                        <button type="button"className='btn signup-button' onClick={() => alert("Customer/Deliverer/shoppage will open!")}>Sign Up</button>
+                        <button type="button"className='btn signup-button' onClick={() => history.push('/login')}>Sign Up</button>
                     </li>
                 </ul>
              {/* Right Side Links*/ }

@@ -1,7 +1,7 @@
 import React from "react";
-import {MainhomeComponent1,MainhomeComponent2}from './MhComponent';
+import {MainhomeComponent1,MainhomeComponent2}from './MainhomeComponent';
 import Carousel from 'react-grid-carousel';
-import './Mhbody.css';
+import { useHistory } from 'react-router-dom';
 import home1 from '../images/home1.png';
 import home2 from '../images/home2.png';
 import home3 from '../images/home3.png';
@@ -22,28 +22,31 @@ import medicine1 from '../images/medicine1.png';
 import medicine2 from '../images/medicine2.png';
 import medicine3 from '../images/medicine3.png';
 import Footer from "../Footer/Footer";
-function Homebody(){
-    return(
-        
-    <React.Fragment>
+import "./Mainhome.css";
+import Navbar from "../Navbar/Navbar";
+function Mainhome(){
 
+    const history = useHistory();
+    return(
+        <React.Fragment>
+            <Navbar/>
 {/**Frist Container,Calling navbar component */}
                 <div className='container-fluid' style={{backgroundImage:' linear-gradient(180deg, #F6C06A 0%, rgba(254, 141, 110, 0) 100%)'}} >
                     <div className='container'>
-                    <div className='row row-style'></div>
-                        <div className='row'>
-                            <div className='col-12 col-lg-5 col-md-6'>
-                     {/**Components used */}
-                            <MainhomeComponent1
-                                frist1='Get ' frist2='Product'
-                                second1='In A ' second2='Easy Way'
-                                pharagraph='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Est porta porttitor i suspendisse luctus 
-                                    aliquet bibendum varius.Cras mr adipiscing elit. Est porta porttitor interdum tempus. Turpis aliquam' 
-                                label='Register Now'
-                                color1='#FD402C'
-                                handleClick={() => alert("Customer Registration will open!")}/>
-                     {/**Components used */}
-                            </div>
+                        <div className='row row-style'></div>
+                            <div className='row'>
+
+                                <div className='col-12 col-lg-5 col-md-6'>
+                {/**Components used */}
+                        <MainhomeComponent1
+                            frist1='Order ' frist2='Product' second1='In A ' second2='Easy Way'
+                            pharagraph='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Est porta porttitor i suspendisse luctus aliquet bibendum varius.Cras mr adipiscing elit.
+                                        Est porta porttitor interdum tempus. Turpis aliquam' 
+                            label='Register Now'
+                            color1='#FD402C'
+                            handleClick={() => history.push('/login') }/>
+                {/**Components used */}
+                                </div>
 
                             <div className='col-12 col-lg-7 col-md-6 text-center'>
                                 <img src={home1} alt='home' className='home-image ' />
@@ -59,37 +62,18 @@ function Homebody(){
                 <div className='container-fluid' style={{backgroundColor: 'white'}}>
                     <div className='container'>
                         <div className='row py-5'>
-                          {/*  <div className='col-12 col-lg-4 col-md-4 col-sm-12 '>
-                                <MainhomeComponent2 cat={food}  cat1={food1} cat2={food2} cat3={food3} categoryname='Food'/>
-                            </div>
-                            <div className='col-12 col-lg-4 col-md-4 col-sm-12 '>
-                                <MainhomeComponent2 cat={grocery} cat1={grocery1} cat2={grocery2} cat3={grocery3} categoryname='Grocery'/>
-                            </div>
-                            <div className='col-12 col-lg-4 col-md-4 col-sm-12 '>
-                                <MainhomeComponent2 cat={medicine}  cat1={medicine1} cat2={medicine2} cat3={medicine3} categoryname='HealthCare'/>
-                             </div>*/}
-                              <Carousel
-                                    cols={3}
-                                    rows={1}
-                                    gap={10}
-
+                              <Carousel cols={3} rows={1} gap={10}
                                     responsiveLayout={[
-                                        {
-                                        breakpoint: 1200,
-                                        cols: 3
+                                        { breakpoint: 1200, cols: 3
                                         },
                                         {
-                                        breakpoint: 990,
-                                        cols: 3
+                                        breakpoint: 990, cols: 3
                                         },
                                         {
-                                            breakpoint: 768,
-                                            cols: 1
+                                        breakpoint: 768, cols: 1
                                         }
                                     ]}
-                                    mobileBreakpoint={500}
-
-                                    >
+                                    mobileBreakpoint={500}>
                                             <Carousel.Item >
                                             <MainhomeComponent2 cat={food}  cat1={food1} cat2={food2} cat3={food3} categoryname='Food'/>
                                             </Carousel.Item>
@@ -100,14 +84,10 @@ function Homebody(){
                                             <MainhomeComponent2 cat={medicine}  cat1={medicine1} cat2={medicine2} cat3={medicine3} categoryname='HealthCare'/>
                                             </Carousel.Item>
                                             </Carousel>
-
                         </div>
                     </div>
                 </div>
 {/**Ending second Row */}
-
-
-
 
 
 {/**Starting third Row */}
@@ -129,7 +109,7 @@ function Homebody(){
                             <p className='process'><b>Step 3</b> <span style={{paddingLeft:'5px'}}><img src={icon2} alt='location' className='processlogo'/> </span><span style={{paddingLeft:'5px'}}>  Confirm Order with Payment Method</span></p> 
                           
                             <div className='py-4'>
-                                <button className='btn home-button' onClick={() => alert("Ordering page will open!")}>Order Now</button>
+                                <button className='btn home-button' onClick={() => history.push('/login')}>Order Now</button>
                             </div>
                         </div>
 
@@ -139,9 +119,6 @@ function Homebody(){
 {/**Ending of the third row */}
 
 
-
-
-
 {/**Starting forth Row */}
             <div className='container-fluid' style={{backgroundColor:'#FE432E'}}>
                 <div className='container'>
@@ -149,15 +126,13 @@ function Homebody(){
                         <div className='col-12 col-lg-6 col-md-6'>
     {/**Components used */}
                             <MainhomeComponent1
-                                frist1='Want To' frist2=' Earn Extra '
-                                second1='Eith Us' second2=' Join As a '
-                                third='Delivery Boy'
+                                frist1='Want To' frist2=' Earn Extra '  second1='Eith Us' second2=' Join As a ' third='Delivery Boy'
                                 pharagraph='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Est porta porttitor i suspendisse luctus 
-                                    aliquet bibendum varius.Cras mr adipiscing elit. Est porta porttitor interdum tempus. Turpis aliquam' 
+                                            aliquet bibendum varius.Cras mr adipiscing elit. Est porta porttitor interdum tempus. Turpis aliquam' 
                                 label='Apply Now'
                                 color2='white'
-                                handleClick={() => alert("Deliverer Registration will open!")}
-                                />
+                                handleClick={() => history.push('/login') }
+                            />
     {/**Components used */}
                         </div>
                             
@@ -168,8 +143,6 @@ function Homebody(){
                 </div>
             </div>
 {/**Ending of the forth row */}
-
-
 
 
 {/**Starting fifth Row */}
@@ -183,15 +156,12 @@ function Homebody(){
                         <div className='col-12 col-lg-6 col-md-6 order-sm-1 order-lg-2 order-md-2'>
     {/**Components reused */}
                         <MainhomeComponent1
-                                frist1='Want To' frist2=' Find More '
-                                second1='Customers ' 
-                                third='Register Your'
-                                forth='Shop/Resturent'
+                                frist1='Want To' frist2=' Find More ' second1='Customers '  third='Register Your' forth='Shop/Resturent'
                                 pharagraph='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Est porta porttitor i suspendisse luctus 
-                                    aliquet bibendum varius.Cras mr adipiscing elit. Est porta porttitor interdum tempus. Turpis aliquam' 
+                                            aliquet bibendum varius.Cras mr adipiscing elit. Est porta porttitor interdum tempus. Turpis aliquam' 
                                 label='Join Now'
                                 color2='#F5643C'
-                                handleClick={() => alert("Shop Registration will open!")}/>
+                                handleClick={() => history.push('/login') }/>
     {/**Components reused */}
                         </div>
                     </div>
@@ -200,9 +170,7 @@ function Homebody(){
 {/**Ending fifth Row */}
             <Footer/>
 </React.Fragment>
-
-        
-
     );
 }
-export default Homebody;
+export default Mainhome;
+

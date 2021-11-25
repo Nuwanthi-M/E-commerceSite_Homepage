@@ -1,15 +1,25 @@
 import React from "react";
 import 'bootstrap/dist/css/bootstrap.min.css';/**Boostrap */
 import 'bootstrap-icons/font/bootstrap-icons.css';/**Bootstrap Icon */
-import Mainpage from "./Components/mainpage";
-
+import Mainhome from "./Components/Mainhome/Mainhome";
+import {BrowserRouter,Route,Switch} from 'react-router-dom';
+import Login from "./Components/Login";
 
 function App() {
   return (
-   <React.Fragment>
-     <Mainpage/>
-
-   </React.Fragment>
+  <React.Fragment>
+    <BrowserRouter>
+        <Switch>
+            <Route path='/login'>    
+              <Login/>
+            </Route>
+            <Route path='/'>    
+              <Mainhome/>
+            </Route>
+            
+        </Switch>
+    </BrowserRouter>
+</React.Fragment>
   );
 }
 
