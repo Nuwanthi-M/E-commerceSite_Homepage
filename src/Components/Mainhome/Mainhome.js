@@ -101,7 +101,7 @@ function Mainhome(){
 
                         <div className='col-sm-12 col-md-6 col-lg-6 order-sm-1  order-lg-2 order-md-2'>
                             <h1 className='py-3  home-heading'>
-                                <strong><span style={{color:'#FE432E'}}>Simple Process </span><span>To</span><br/>Make Order Your Favourite Foods/</strong>
+                                <strong style={{color:'#FE432E'}}>Simple Process </strong><strong>To<br/>Make Order Your Favourite Foods/</strong>
                             </h1>
                             <br/>
                             <p className='process'><b>Step 1</b> <span style={{paddingLeft:'5px'}}><img src={icon1} alt='location'  className='processlogo'/></span><span style={{paddingLeft:'5px'}}> Set Your Location Frist</span></p> 

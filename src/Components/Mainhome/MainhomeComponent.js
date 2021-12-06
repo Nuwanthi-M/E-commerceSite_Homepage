@@ -6,9 +6,9 @@ function MainhomeComponent1(props,style){
     return(
         <React.Fragment>
             <h1 className='py-3 home-heading'>
-                <strong><span style={{color: props.color1}}>{props.frist1}</span><span style={{color: props.color2}}>{props.frist2}</span></strong>
+                <strong style={{color: props.color1}}>{props.frist1}</strong><strong style={{color: props.color2}}>{props.frist2}</strong>
                     <br/>
-                <strong><span style={{color: props.color2}}>{props.second1}</span><span style={{color: props.color1}}>{props.second2}</span></strong>
+                <strong style={{color: props.color2}}>{props.second1}</strong><strong style={{color: props.color1}}>{props.second2}</strong>
                     <br/>
                 <strong>{props.third}</strong>
                 <strong>{props.forth}</strong>
