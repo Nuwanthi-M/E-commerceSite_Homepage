@@ -42,7 +42,7 @@
   font-size: 20px;
 }
 .dropdown-item:hover {
-  background-color: #f0cd95;
+  background-color: #e99919;
 }
 @media (max-width: 1250px) {
   .logo {

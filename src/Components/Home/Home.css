@@ -53,7 +53,7 @@
   box-shadow: rgba(0, 0, 0, 0.56) 7px 7px 7px 7px;
 }
 
-.play {
+.category {
   position: absolute;
   width: 200px;
   height: 105px;
@@ -76,7 +76,7 @@
     width: 270px;
     height: 370px;
   }
-  .play {
+  .category {
     width: 175px;
     height: 105px;
   }
@@ -124,7 +124,7 @@
     height: 340px;
     box-shadow: rgba(0, 0, 0, 0.56) 3px 3px 3px 3px;
   }
-  .play {
+  .category {
     width: 140px;
     height: 80px;
   }
@@ -168,7 +168,7 @@
     height: 280px;
     box-shadow: rgba(0, 0, 0, 0.56) 2px 2px 2px 2px;
   }
-  .play {
+  .category {
     width: 105px;
     height: 63px;
   }
@@ -214,7 +214,7 @@
     width: 330px;
     height: 430px;
   }
-  .play {
+  .category {
     width: 205px;
     height: 107px;
   }

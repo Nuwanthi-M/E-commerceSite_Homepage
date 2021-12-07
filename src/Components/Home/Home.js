@@ -1,5 +1,5 @@
 import React from "react";
-import {MainhomeComponent1,MainhomeComponent2}from './MainhomeComponent';
+import {HomeComponent1,HomeComponent2}from './HomeComponent';
 import Carousel from 'react-grid-carousel';
 import { useHistory } from 'react-router-dom';
 import home1 from '../images/home1.png';
@@ -22,9 +22,9 @@ import medicine1 from '../images/medicine1.png';
 import medicine2 from '../images/medicine2.png';
 import medicine3 from '../images/medicine3.png';
 import Footer from "../Footer/Footer";
-import "./Mainhome.css";
+import "./Home.css";
 import Navbar from "../Navbar/Navbar";
-function Mainhome(){
+function Home(){
 
     const history = useHistory();
     return(
@@ -38,7 +38,7 @@ function Mainhome(){
 
                                 <div className='col-12 col-lg-5 col-md-6'>
                 {/**Components used */}
-                        <MainhomeComponent1
+                        <HomeComponent1
                             frist1='Order ' frist2='Product' second1='In A ' second2='Easy Way'
                             pharagraph='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Est porta porttitor i suspendisse luctus aliquet bibendum varius.Cras mr adipiscing elit.
                                         Est porta porttitor interdum tempus. Turpis aliquam' 
@@ -75,13 +75,13 @@ function Mainhome(){
                                     ]}
                                     mobileBreakpoint={500}>
                                             <Carousel.Item >
-                                            <MainhomeComponent2 cat={food}  cat1={food1} cat2={food2} cat3={food3} categoryname='Food'/>
+                                            <HomeComponent2 cat={food}  cat1={food1} cat2={food2} cat3={food3} categoryname='Food'/>
                                             </Carousel.Item>
                                             <Carousel.Item>
-                                            <MainhomeComponent2 cat={grocery} cat1={grocery1} cat2={grocery2} cat3={grocery3} categoryname='Grocery'/>
+                                            <HomeComponent2 cat={grocery} cat1={grocery1} cat2={grocery2} cat3={grocery3} categoryname='Grocery'/>
                                             </Carousel.Item>
                                             <Carousel.Item>
-                                            <MainhomeComponent2 cat={medicine}  cat1={medicine1} cat2={medicine2} cat3={medicine3} categoryname='HealthCare'/>
+                                            <HomeComponent2 cat={medicine}  cat1={medicine1} cat2={medicine2} cat3={medicine3} categoryname='HealthCare'/>
                                             </Carousel.Item>
                                             </Carousel>
                         </div>
@@ -125,7 +125,7 @@ function Mainhome(){
                     <div className='row' >
                         <div className='col-12 col-lg-6 col-md-6'>
     {/**Components used */}
-                            <MainhomeComponent1
+                            <HomeComponent1
                                 frist1='Want To' frist2=' Earn Extra '  second1='Eith Us' second2=' Join As a ' third='Delivery Boy'
                                 pharagraph='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Est porta porttitor i suspendisse luctus 
                                             aliquet bibendum varius.Cras mr adipiscing elit. Est porta porttitor interdum tempus. Turpis aliquam' 
@@ -155,7 +155,7 @@ function Mainhome(){
                             
                         <div className='col-12 col-lg-6 col-md-6 order-sm-1 order-lg-2 order-md-2'>
     {/**Components reused */}
-                        <MainhomeComponent1
+                        <HomeComponent1
                                 frist1='Want To' frist2=' Find More ' second1='Customers '  third='Register Your' forth='Shop/Resturent'
                                 pharagraph='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Est porta porttitor i suspendisse luctus 
                                             aliquet bibendum varius.Cras mr adipiscing elit. Est porta porttitor interdum tempus. Turpis aliquam' 
@@ -172,5 +172,5 @@ function Mainhome(){
 </React.Fragment>
     );
 }
-export default Mainhome;
+export default Home;
 

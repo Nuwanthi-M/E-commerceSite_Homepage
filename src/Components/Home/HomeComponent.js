@@ -1,7 +1,8 @@
 import React from "react";
 import bell from '../images/bell.png';
-import "./Mainhome.css";
-function MainhomeComponent1(props,style){
+import "./Home.css";
+
+function HomeComponent1(props,style){
 
     return(
         <React.Fragment>
@@ -24,7 +25,8 @@ function MainhomeComponent1(props,style){
         </React.Fragment>
         );
 }
-function MainhomeComponent2(props){
+
+function HomeComponent2(props){
     return(
         <React.Fragment>
             <div className='text-center'>
@@ -35,9 +37,9 @@ function MainhomeComponent2(props){
                 </div>
 
                 <div className="wrapper">
-                    <img className="play" src={props.cat1}  alt='item1'  style={{top:'5%'}} />
-                    <img className="play" src={props.cat2}  alt='item2' style={{top:'37%'}} />
-                    <img className="play" src={props.cat3}  alt='item3' style={{top:'68%'}} />
+                    <img className="category" src={props.cat1}  alt='item1'  style={{top:'5%'}} />
+                    <img className="category" src={props.cat2}  alt='item2' style={{top:'37%'}} />
+                    <img className="category" src={props.cat3}  alt='item3' style={{top:'68%'}} />
                     <img src={props.cat} alt='mainitem' className='mainimage'/>
                 </div>
                 <br/><br/>
@@ -45,7 +47,8 @@ function MainhomeComponent2(props){
         </React.Fragment>
         );
 }
-export {MainhomeComponent1,MainhomeComponent2};
+
+export {HomeComponent1,HomeComponent2};
 /**const styles = {
        
 

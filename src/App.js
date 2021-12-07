@@ -1,8 +1,8 @@
 import React from "react";
+import {BrowserRouter,Route,Switch} from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';/**Boostrap */
 import 'bootstrap-icons/font/bootstrap-icons.css';/**Bootstrap Icon */
-import Mainhome from "./Components/Mainhome/Mainhome";
-import {BrowserRouter,Route,Switch} from 'react-router-dom';
+import Home from "./Components/Home/Home";
 import Login from "./Components/Login";
 
 function App() {
@@ -14,7 +14,7 @@ function App() {
               <Login/>
             </Route>
             <Route path='/'>    
-              <Mainhome/>
+              <Home/>
             </Route>
             
         </Switch>
