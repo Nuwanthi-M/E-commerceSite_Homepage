@@ -1,7 +1,11 @@
 import React from "react";
-import {HomeComponent1,HomeComponent2}from './HomeComponent';
-import Carousel from 'react-grid-carousel';
 import { useHistory } from 'react-router-dom';
+import styled from 'styled-components';
+import Carousel from 'react-grid-carousel';
+import {HomeComponent1,HomeComponent2, HomeComponent3,HomeComponent4,HomeComponent5}from './home-component';
+
+
+
 import home1 from '../images/home1.png';
 import home2 from '../images/home2.png';
 import home3 from '../images/home3.png';
@@ -21,48 +25,76 @@ import medicine from '../images/medicine.png';
 import medicine1 from '../images/medicine1.png';
 import medicine2 from '../images/medicine2.png';
 import medicine3 from '../images/medicine3.png';
-import Footer from "../Footer/Footer";
-import "./Home.css";
-import Navbar from "../Navbar/Navbar";
-function Home(){
 
+
+
+const ShopContent=styled.div`
+    background-color:#F8F7E9;
+`;
+const DelivererContent=styled.div`
+    background-color:#FE432E;
+`;
+const CustomerContent=styled.div`
+    background-image:linear-gradient(180deg, #F6C06A 0%, rgba(254, 141, 110, 0) 100%);    
+`;
+const CuroesulContent=styled.div`
+    background-color:white;    
+`;
+const OrderprocessContent=styled.div`
+    background-color:#F8F7E9;    
+`;
+
+const Rowstyle=styled.div`
+    height: 100px;
+@media (min-width: 992px) and (max-width: 1200px){
+    height: 70px;
+    }
+@media (min-width: 768px) and (max-width:992px){
+    height: 70px;
+    }
+@media (min-width:576px) and (max-width: 768px){
+    height: 0px;
+    }
+@media (min-width:400px) and (max-width: 576px){
+    height: 10px;
+    }
+`;
+
+function CustomerSection(){
     const history = useHistory();
     return(
-        <React.Fragment>
-            <Navbar/>
-{/**Frist Container,Calling navbar component */}
-                <div className='container-fluid' style={{backgroundImage:' linear-gradient(180deg, #F6C06A 0%, rgba(254, 141, 110, 0) 100%)'}} >
-                    <div className='container'>
-                        <div className='row row-style'></div>
-                            <div className='row'>
-
-                                <div className='col-12 col-lg-5 col-md-6'>
-                {/**Components used */}
-                        <HomeComponent1
-                            frist1='Order ' frist2='Product' second1='In A ' second2='Easy Way'
-                            pharagraph='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Est porta porttitor i suspendisse luctus aliquet bibendum varius.Cras mr adipiscing elit.
-                                        Est porta porttitor interdum tempus. Turpis aliquam' 
-                            label='Register Now'
-                            color1='#FD402C'
-                            handleClick={() => history.push('/login') }/>
-                {/**Components used */}
+        <div>
+            <CustomerContent className='container-fluid'>
+                <div className='container'>
+                    <Rowstyle className='row'></Rowstyle>
+                        <div className='row'>
+                            <div className='col-12 col-lg-5 col-md-6'>
+                                    <HomeComponent1
+                                        frist1='Order ' frist2='Product' second1='In A ' second2='Easy Way'
+                                        pharagraph='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Est porta porttitor i suspendisse luctus aliquet bibendum varius.Cras mr adipiscing elit.
+                                                    Est porta porttitor interdum tempus. Turpis aliquam' 
+                                        label='Register Now'
+                                        color1='#FD402C'
+                                        handleClick={() => history.push('/login') }/>
                                 </div>
-
                             <div className='col-12 col-lg-7 col-md-6 text-center'>
-                                <img src={home1} alt='home' className='home-image ' />
+                                <HomeComponent3 homeimage={home1}/>
                             </div>
-
                         </div>
                     </div>
-                </div>           
-{/**end of the Container */}
-        
+                </CustomerContent>           
+            </div>
+    );
+}
 
-{/**Starting Second Row */}
-                <div className='container-fluid' style={{backgroundColor: 'white'}}>
-                    <div className='container'>
-                        <div className='row py-5'>
-                              <Carousel cols={3} rows={1} gap={10}
+
+function CuroesulSection(){
+    return(
+        <div>
+            <CuroesulContent className='container-fluid'>
+                <div className='container'>
+                    <div className='row py-4'>
+                              <Carousel cols={3} rows={1} gap={4}
                                     responsiveLayout={[
                                         { breakpoint: 1200, cols: 3
                                         },
@@ -71,9 +103,15 @@ function Home(){
                                         },
                                         {
                                         breakpoint: 768, cols: 1
+                                        },
+                                        {
+                                        breakpoint: 576, cols: 1
+                                        },
+                                        {
+                                        breakpoint: 400, cols: 1
                                         }
                                     ]}
-                                    mobileBreakpoint={500}>
+                                    mobileBreakpoint={395}>
                                             <Carousel.Item >
                                             <HomeComponent2 cat={food}  cat1={food1} cat2={food2} cat3={food3} categoryname='Food'/>
                                             </Carousel.Item>
@@ -84,93 +122,95 @@ function Home(){
                                             <HomeComponent2 cat={medicine}  cat1={medicine1} cat2={medicine2} cat3={medicine3} categoryname='HealthCare'/>
                                             </Carousel.Item>
                                             </Carousel>
-                        </div>
-                    </div>
-                </div>
-{/**Ending second Row */}
-
-
-{/**Starting third Row */}
-            <div className='container-fluid' style={{backgroundColor: '#F8F7E9'}}>
-                <div className='container'>
-                    <div className='row'>
-                        
-                        <div className='col-sm-12 col-md-6 col-lg-6 order-sm-2 order-lg-1 order-md-1'>
-                            <img src={home2} alt='shopping' className='py-5 sub-image'/>
-                        </div>
-
-                        <div className='col-sm-12 col-md-6 col-lg-6 order-sm-1  order-lg-2 order-md-2'>
-                            <h1 className='py-3  home-heading'>
-                                <strong style={{color:'#FE432E'}}>Simple Process </strong><strong>To<br/>Make Order Your Favourite Foods/</strong>
-                            </h1>
-                            <br/>
-                            <p className='process'><b>Step 1</b> <span style={{paddingLeft:'5px'}}><img src={icon1} alt='location'  className='processlogo'/></span><span style={{paddingLeft:'5px'}}> Set Your Location Frist</span></p> 
-                            <p className='process'><b>Step 2</b> <span style={{paddingLeft:'5px'}}><img src={icon3} alt='location' className='processlogo'/> </span><span style={{paddingLeft:'5px'}}>  Choose the Food You Want to Order</span></p> 
-                            <p className='process'><b>Step 3</b> <span style={{paddingLeft:'5px'}}><img src={icon2} alt='location' className='processlogo'/> </span><span style={{paddingLeft:'5px'}}>  Confirm Order with Payment Method</span></p> 
-                          
-                            <div className='py-4'>
-                                <button className='btn home-button' onClick={() => history.push('/login')}>Order Now</button>
                             </div>
                         </div>
-
-                    </div>
+                    </CuroesulContent>
                 </div>
-            </div>
-{/**Ending of the third row */}
+    );
+}
 
 
-{/**Starting forth Row */}
-            <div className='container-fluid' style={{backgroundColor:'#FE432E'}}>
+function OrderprocessSection(){
+    const history = useHistory();
+    return(
+        <div>
+            < OrderprocessContent className='container-fluid'>
+                <div className='container'>
+                    <div className='row'>
+                        <div className='col-sm-12 col-md-6 col-lg-6 order-sm-2 order-lg-1 order-md-1'>
+                            <HomeComponent4 homeimage={home2}/>
+                        </div>
+                        <div className='col-sm-12 col-md-6 col-lg-6 order-sm-1  order-lg-2 order-md-2'>
+                            <HomeComponent5 icon1={icon1} icon2={icon2} icon3={icon3}   label='Order Now' handleClick={() => history.push('/')} />
+                        </div>
+                    </div>
+                </div> <br/>
+            </ OrderprocessContent>   
+        </div>
+    );
+}
+
+
+function DelivererSection(){
+    const history = useHistory();
+    return(
+        <div>
+            <DelivererContent className='container-fluid'>
                 <div className='container'>
                     <div className='row' >
                         <div className='col-12 col-lg-6 col-md-6'>
-    {/**Components used */}
                             <HomeComponent1
                                 frist1='Want To' frist2=' Earn Extra '  second1='Eith Us' second2=' Join As a ' third='Delivery Boy'
                                 pharagraph='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Est porta porttitor i suspendisse luctus 
                                             aliquet bibendum varius.Cras mr adipiscing elit. Est porta porttitor interdum tempus. Turpis aliquam' 
                                 label='Apply Now'
                                 color2='white'
-                                handleClick={() => history.push('/login') }
+                                handleClick={() => history.push('/') }
                             />
-    {/**Components used */}
                         </div>
-                            
+        
                         <div className='col-12 col-lg-6 col-md-6'>
-                            <img src={home3} alt='shopping'className='py-5 sub-image'/>
+                            <HomeComponent4  homeimage={home3}/>
+                        <br/><br/>
                         </div>
                     </div>
                 </div>
-            </div>
-{/**Ending of the forth row */}
+                <br/>
+            </DelivererContent>    
+        </div>
+    );
+}
 
 
-{/**Starting fifth Row */}
-            <div className='container-fluid' style={{backgroundColor: '#F8F7E9'}}>
+
+
+function ShopSection(){
+    const history = useHistory();
+    return(
+        <div>
+            <ShopContent className='container-fluid'>
                 <div className='container'>
                     <div className='row'>
                         <div className='col-12 col-lg-6 col-md-6 order-sm-2 order-lg-1 order-md-1'>
-                            <img src={home4} alt='shopping' className='py-5 sub-image'/>
+                        <HomeComponent4 homeimage={home4}/>
                         </div>
                             
                         <div className='col-12 col-lg-6 col-md-6 order-sm-1 order-lg-2 order-md-2'>
-    {/**Components reused */}
                         <HomeComponent1
                                 frist1='Want To' frist2=' Find More ' second1='Customers '  third='Register Your' forth='Shop/Resturent'
                                 pharagraph='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Est porta porttitor i suspendisse luctus 
                                             aliquet bibendum varius.Cras mr adipiscing elit. Est porta porttitor interdum tempus. Turpis aliquam' 
                                 label='Join Now'
                                 color2='#F5643C'
-                                handleClick={() => history.push('/login') }/>
-    {/**Components reused */}
+                                handleClick={() => history.push('/') }/>
                         </div>
                     </div>
                 </div>
-          </div>
-{/**Ending fifth Row */}
-            <Footer/>
-</React.Fragment>
+                <br/><br/>
+            </ShopContent>
+        </div>
     );
 }
-export default Home;
 
+
+export {ShopSection,DelivererSection,CustomerSection,CuroesulSection,OrderprocessSection};

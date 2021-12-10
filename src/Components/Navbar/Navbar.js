@@ -1,65 +1,233 @@
 import React from "react";
-import './Navbar.css';
-import logo from '../images/logo.png';
-import toggle from '../images/toggle.png';
 import 'font-awesome/css/font-awesome.min.css';
 import {Link} from 'react-router-dom';
 import { useHistory } from 'react-router-dom';
+import styled from 'styled-components';
+
+
+import logo from '../images/logo.png';
+import toggle from '../images/toggle.png';
+
+const Navlogo=styled.img`
+    width: 100px;
+    height: auto;
+    @media (min-width: 992px) and (max-width: 1200px){
+        width: 100px;
+        height: auto;
+        }
+    @media (min-width: 768px) and (max-width:992px){
+        width: 90px;
+        height: auto;
+        }
+    @media (min-width:576px) and (max-width: 768px){
+        width: 80px;
+        height: auto;
+        padding-bottom: 20px;
+        }
+    @media (min-width:400px) and (max-width: 576px){
+        width: 60px;
+        height: auto;
+        padding-bottom: 10px;
+        }
+`;
+
+const Toggler=styled.img`
+    width: 38px;
+    height: 38px;
+    @media (min-width: 400px) and (max-width:768px){
+        width: 30px;
+        height: 30px;
+        }
+`;
+
+const LoginButton=styled.button`
+    background-color: #ffffff;
+    border-color: #f4633b;
+    color: #f4633b;
+    width: 120px;
+    height: 40px;
+    font-size: 19px;
+    :hover {
+        background-color: #f4633b;
+      }
+    @media (min-width: 992px) and (max-width: 1200px){
+        font-size: 18px;
+        width: 100px;
+        }
+    @media (min-width: 768px) and (max-width:992px){
+        font-size: 18px;
+        width: 100px;
+        }
+    @media (min-width:576px) and (max-width: 768px){
+        font-size: 18px;
+        width: 100px;
+        }
+    @media (min-width:400px) and (max-width: 576px){
+        font-size: 17px;
+        width: 70px;
+        }
+    @media (min-width:400px) and (max-width: 576px){
+        font-size: 17px;
+        width: 90px;
+            }
+`;
+
+const SignupButton=styled.button`
+    font-size: 20px;
+    background-color: #f4633b;
+    border-color: #f4633b;
+    color: "black";
+    width: 120px;
+    height: 40px;
+    :hover {
+        border-color: #f4633b;
+        background-color: white;
+        color: #f4633b;
+      }
+    @media (min-width: 992px) and (max-width: 1200px){
+        width: 100px;
+        font-size: 19px;
+        }
+    @media (min-width: 768px) and (max-width:992px){
+        width: 100px;
+        font-size: 19px;
+        }
+    @media (min-width:576px) and (max-width: 768px){
+        width: 100px;
+        font-size: 18px;
+        }
+    @media (min-width:400px) and (max-width: 576px){
+        font-size: 17px;
+        width: 90px;
+                }
+    
+`;
+
+const Navitem=styled.li`
+    font-family: "Roboto", sans-serif;
+    font-size: 20px;
+    padding: 10px 15px 5px 15px;
+    @media (min-width: 992px) and (max-width: 1200px){
+        font-size: 19px;
+        padding: 3px 5px 5px 5px;
+        }
+    @media (min-width: 768px) and (max-width:992px){
+        font-size: 19px;
+        text-align: center;
+        :hover {
+            background-color: #f0cd95;
+          }
+        }
+    @media (min-width:576px) and (max-width: 768px){
+        font-size: 18px;
+        text-align: center;
+        :hover {
+            background-color: #f0cd95;
+          }
+        }
+    @media (min-width:400px) and (max-width: 576px){
+        font-size: 17px;
+        text-align: center;
+        :hover {
+            background-color: #f0cd95;
+          }
+        }
+`;
+
+const Dropdownmenu=styled.ul`
+    background-color: #f6c06a;
+    width: 220px;
+    border-color: #f6c06a;
+    @media (min-width: 768px) and (max-width:992px){
+        width: 100%;
+        text-align: center;
+        }
+        @media (min-width: 400px) and (max-width:768px){
+            width: 100%;
+            text-align: center;
+            }
+`;
+const Dropdownitem=styled.a`
+    font-size: 19px;
+    :hover {
+        background-color: #e99919;
+      }
+    @media (min-width: 992px) and (max-width: 1200px){
+        font-size: 19px;
+        }
+    @media (min-width: 768px) and (max-width:992px){
+        font-size: 19px;
+        }
+    @media (min-width:576px) and (max-width: 768px){
+        font-size: 18px;
+        }
+    @media (min-width:400px) and (max-width: 576px){
+        font-size: 16px;
+        }
+`;
+
+const MainContainer=styled.nav`
+    background-color: #F6C06A;
+`;
+
 function Navbar() {
+
     const history = useHistory();
+
+
   return (
        
     <React.Fragment>
-        <nav className="navbar navbar-expand-lg navbar-light p-3" style={{backgroundColor:' #F6C06A'}}> 
+        <MainContainer className="navbar navbar-expand-lg navbar-light p-3" > 
             <div className="container-fluid">
                 <a className="navbar-brand" href="https://getbootstrap.com/docs/5.1/components/navbar/">
-                    <img src={logo} alt='logo' className='logo'/>{/**Include Logo Image */}
+                    <Navlogo src={logo} alt='logo'/>{/**=============================Include Logo Image========================================= */}
                 </a>
                     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                        <span> <img src={toggle} alt='logo' className='toggle'/></span>
+                        <span> <Toggler src={toggle} alt='logo' className='toggle'/></span>
 
-                    </button>{/**Including Toggle Menu */}
+                    </button>{/**=================================Including Toggle Menu ========================================*/}
 
             <div className="collapse navbar-collapse" id="navbarSupportedContent">
 
-            {/*Center side Links*/ }
+            {/*===========================================Center side Links================================================*/ }
                 <ul className="navbar-nav mx-auto" >
-                    <li className="nav-item ">
+                    <Navitem className="nav-item ">
                         <Link className="nav-link active" aria-current="page" to='/'>Home</Link>
-                    </li>
-                    <li className="nav-item ">
+                    </Navitem>
+                    <Navitem className="nav-item ">
                         <a className="nav-link" href="https://getbootstrap.com/docs/5.1/components/navbar/">About</a>
-                    </li>
-                            <li className="nav-item dropdown">
+                    </Navitem>
+                            <Navitem className="nav-item dropdown">
                 <a className="nav-link dropdown-toggle" href="#category" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                     Categories
                 </a>
-                <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <li><a className="dropdown-item" href="#category">Food</a></li>
-                    <li><a className="dropdown-item" href="#category">Grocery</a></li>
-                    <li><a className="dropdown-item" href="#category">Health Care</a></li>
-                </ul>
-                </li>
+                <Dropdownmenu className="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li>< Dropdownitem className="dropdown-item" href="#category">Food</ Dropdownitem></li>
+                    <li>< Dropdownitem className="dropdown-item" href="#category">Grocery</ Dropdownitem></li>
+                    <li>< Dropdownitem className="dropdown-item" href="#category">Health Care</ Dropdownitem></li>
+                </Dropdownmenu>
+                </Navitem>
                     
                 </ul>
-            {/*Center side Links*/ }    
+            {/*=============================================Center side Links==================================================*/ }    
 
-            {/* Right Side Links*/ }
+            {/* ===============================================Right Side Links================================================*/ }
                 <ul className="navbar-nav" >
-                    <li className="nav-item">
+                    <Navitem className="nav-item">
                         <i className="fa fa-shopping-cart"></i>
-                    </li>
-                    <li className="nav-item">
-                        <button type="button" className="btn login-button" onClick={() => history.push('/login')}>Log In</button>
-                    </li>
-                    <li className="nav-item">
-                        <button type="button"className='btn signup-button' onClick={() => history.push('/login')}>Sign Up</button>
-                    </li>
+                    </Navitem>
+                    <Navitem className="nav-item">
+                        <LoginButton type="button" className="btn" onClick={() => history.push('./')}>Log In</LoginButton>
+                    </Navitem>
+                    <Navitem className="nav-item">
+                        <SignupButton type="button" className="btn" onClick={() => history.push('./')}>Sign Up</SignupButton>
+                    </Navitem>
                 </ul>
-             {/* Right Side Links*/ }
+             {/*========================================== Right Side Links==================================================*/ }
             </div>
         </div>
-    </nav>
+    </MainContainer>
 </React.Fragment>
   );
 }
