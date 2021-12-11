@@ -35,7 +35,8 @@ const DelivererContent=styled.div`
     background-color:#FE432E;
 `;
 const CustomerContent=styled.div`
-    background-image:linear-gradient(180deg, #F6C06A 0%, rgba(254, 141, 110, 0) 100%);    
+    background-image:linear-gradient(180deg, #F6C06A 0%, rgba(254, 141, 110, 0) 100%);
+    margin:0px;    
 `;
 const CuroesulContent=styled.div`
     background-color:white;    

@@ -80,7 +80,7 @@ function Footer(){
         <React.Fragment>
             <MainContainer className='container-fluid'>
                 <div className='container'>
-                    <div className='row py-5'>
+                    <div className='row py-4'>
                         <div className='col-12 col-lg-4 col-sm-12'>
                             < FooterLogo src={Footerlogo} alt='footer'/>
                         </div>
