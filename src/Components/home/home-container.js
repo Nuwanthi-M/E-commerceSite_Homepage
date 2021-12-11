@@ -81,7 +81,7 @@ function CustomerSection(){
                                     <HomeComponent1
                                         frist1='Order ' frist2='Product' second1='In A ' second2='Easy Way'
                                         pharagraph='Now we have made it easy to order from different shops at a time.Just order what you need through us.
-                                                    we will bring it to your doorstep quickly and safely from Quik.' 
+                                                    We will bring it to your doorstep quickly and safely from Quik.' 
                                         label='Register Now'
                                         color1='#FD402C'
                                         handleClick={() => history.push('/login') }/>
@@ -172,7 +172,7 @@ function DelivererSection(){
                         <div className='col-12 col-lg-6 col-md-6'>
                             <HomeComponent1
                                 frist1='To Earn' frist2=' Extra'  second1='Income' second2=' Join As a' third='Delivery Boy'
-                                pharagraph='Want to become Quik rider and earn money.Very easy ,all you need is a phone and a sutaible vehicle.
+                                pharagraph='Want to become Quik rider and earn money.Very easy ,All you need is a phone and a sutaible vehicle.
                                             Accept the order request and finish it in the best way and earn a better amount.' 
                                 label='Apply Now'
                                 color2='white'
