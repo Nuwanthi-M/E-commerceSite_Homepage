@@ -43,6 +43,14 @@ const CuroesulContent=styled.div`
 const OrderprocessContent=styled.div`
     background-color:#F8F7E9;    
 `;
+const Custommargin=styled.div`
+@media (min-width: 992px) and (max-width:1200px){
+    padding-left:30px;
+    }   
+@media (min-width: 768px) and (max-width:992px){
+    padding-left:40px;
+    }   
+`;
 
 const Rowstyle=styled.div`
     height: 100px;
@@ -71,8 +79,8 @@ function CustomerSection(){
                             <div className='col-12 col-lg-5 col-md-6'>
                                     <HomeComponent1
                                         frist1='Order ' frist2='Product' second1='In A ' second2='Easy Way'
-                                        pharagraph='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Est porta porttitor i suspendisse luctus aliquet bibendum varius.Cras mr adipiscing elit.
-                                                    Est porta porttitor interdum tempus. Turpis aliquam' 
+                                        pharagraph='Now we have made it easy to order from different shops at a time.Just order what you need through us.
+                                                    we will bring it to your doorstep quickly and safely from Quik.' 
                                         label='Register Now'
                                         color1='#FD402C'
                                         handleClick={() => history.push('/login') }/>
@@ -140,15 +148,17 @@ function OrderprocessSection(){
                         <div className='col-sm-12 col-md-6 col-lg-6 order-sm-2 order-lg-1 order-md-1'>
                             <HomeComponent4 homeimage={home2}/>
                         </div>
-                        <div className='col-sm-12 col-md-6 col-lg-6 order-sm-1  order-lg-2 order-md-2'>
+                        < Custommargin className='col-sm-12 col-md-6 col-lg-6 order-sm-1  order-lg-2 order-md-2'>
                             <HomeComponent5 icon1={icon1} icon2={icon2} icon3={icon3}   label='Order Now' handleClick={() => history.push('/')} />
-                        </div>
+                        </ Custommargin>
                     </div>
                 </div> <br/>
             </ OrderprocessContent>   
         </div>
     );
 }
+
+
 
 
 function DelivererSection(){
@@ -160,9 +170,9 @@ function DelivererSection(){
                     <div className='row' >
                         <div className='col-12 col-lg-6 col-md-6'>
                             <HomeComponent1
-                                frist1='Want To' frist2=' Earn Extra '  second1='Eith Us' second2=' Join As a ' third='Delivery Boy'
-                                pharagraph='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Est porta porttitor i suspendisse luctus 
-                                            aliquet bibendum varius.Cras mr adipiscing elit. Est porta porttitor interdum tempus. Turpis aliquam' 
+                                frist1='To Earn' frist2=' Extra'  second1='Income' second2=' Join As a' third='Delivery Boy'
+                                pharagraph='Want to become Quik rider and earn money.Very easy ,all you need is a phone and a sutaible vehicle.
+                                            Accept the order request and finish it in the best way and earn a better amount.' 
                                 label='Apply Now'
                                 color2='white'
                                 handleClick={() => history.push('/') }
@@ -195,18 +205,18 @@ function ShopSection(){
                         <HomeComponent4 homeimage={home4}/>
                         </div>
                             
-                        <div className='col-12 col-lg-6 col-md-6 order-sm-1 order-lg-2 order-md-2'>
+                        < Custommargin className='col-12 col-lg-6 col-md-6 order-sm-1 order-lg-2 order-md-2'>
                         <HomeComponent1
-                                frist1='Want To' frist2=' Find More ' second1='Customers '  third='Register Your' forth='Shop/Resturent'
-                                pharagraph='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Est porta porttitor i suspendisse luctus 
-                                            aliquet bibendum varius.Cras mr adipiscing elit. Est porta porttitor interdum tempus. Turpis aliquam' 
+                                frist1='To Find' frist2=' More Customers' second1='Register Your'  third='Shop/Resturent'
+                                pharagraph='Do not your shop have delivery staffs,Want to catch more customers and increse your business quickly.Do not worry
+                                             join with us.'
                                 label='Join Now'
                                 color2='#F5643C'
                                 handleClick={() => history.push('/') }/>
-                        </div>
+                        </ Custommargin>
                     </div>
                 </div>
-                <br/><br/>
+                <br/><br/><br/><br/>
             </ShopContent>
         </div>
     );

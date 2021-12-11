@@ -149,8 +149,10 @@ const Dropdownmenu=styled.ul`
 `;
 const Dropdownitem=styled.a`
     font-size: 19px;
+    color:black;
     :hover {
-        background-color: #e99919;
+        background-color: #f0cd95;
+        color:black;
       }
     @media (min-width: 992px) and (max-width: 1200px){
         font-size: 19px;
@@ -196,16 +198,16 @@ function Navbar() {
                         <Link className="nav-link active" aria-current="page" to='/'>Home</Link>
                     </Navitem>
                     <Navitem className="nav-item ">
-                        <a className="nav-link" href="https://getbootstrap.com/docs/5.1/components/navbar/">About</a>
+                        <Link className="nav-link active" aria-current="page" to='/'>About</Link>
                     </Navitem>
                             <Navitem className="nav-item dropdown">
                 <a className="nav-link dropdown-toggle" href="#category" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                     Categories
                 </a>
                 <Dropdownmenu className="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <li>< Dropdownitem className="dropdown-item" href="#category">Food</ Dropdownitem></li>
-                    <li>< Dropdownitem className="dropdown-item" href="#category">Grocery</ Dropdownitem></li>
-                    <li>< Dropdownitem className="dropdown-item" href="#category">Health Care</ Dropdownitem></li>
+                    <li>< Dropdownitem  className="dropdown-item" tag={Link} to="/">Food</Dropdownitem ></li>
+                    <li>< Dropdownitem  className="dropdown-item" tag={Link} to="/">Grocery</Dropdownitem ></li>
+                    <li>< Dropdownitem  className="dropdown-item" tag={Link} to="/">Health Care</Dropdownitem ></li>
                 </Dropdownmenu>
                 </Navitem>
                     

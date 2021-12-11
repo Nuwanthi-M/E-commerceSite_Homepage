@@ -47,12 +47,12 @@ const Paragraph=styled.p`
 `;
 
 const Homebutton=styled.button`
-width: 200px;
-height: 50px;
-border-color: #32303a;
-background-color: #32303a;
-color: #f8b742;
-border-radius: 5px;
+    width: 200px;
+    height: 50px;
+    border-color: #32303a;
+    background-color: #32303a;
+    color: #f8b742;
+    border-radius: 5px;
 :hover {
   color: #141414;
   background-color: #b4b1af;
@@ -81,10 +81,10 @@ border-radius: 5px;
 
 
 const Categoreybutton=styled.button`
-border-radius: 30px;
-background-color: #f6c06a;
-width: 150px;
-height: 50px;
+    border-radius: 30px;
+    background-color: #f6c06a;
+    width: 150px;
+    height: 50px;
 @media (min-width: 992px) and (max-width: 1200px){
    
     }
@@ -131,11 +131,16 @@ const Bellicon=styled.img`
 `;
 
 const Category=styled.img`
-position: absolute;
-width: 200px;
-height: 110px;
-left: 50%;
-border-radius: 15px;
+    position: absolute;
+    width: 200px;
+    height: 110px;
+    left: 50%;
+    border-radius: 15px;
+@media (min-width: 1200px) and (max-width: 1400px){
+        width: 200px;
+        height: 95px;
+        left: 40%;
+          }
 @media (min-width: 992px) and (max-width: 1200px){
   width: 170px;
   height: 95px;
@@ -164,10 +169,10 @@ border-radius: 15px;
 `;
 
 const Mainimg=styled.img`
-width: 270px;
-height: 420px;
-border-radius: 20px;
-box-shadow: rgba(0, 0, 0, 0.56) 7px 7px 7px 7px;
+    width: 270px;
+    height: 420px;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.56) 7px 7px 7px 7px;
 @media (min-width: 992px) and (max-width: 1200px){
   width: 230px;
   height: 340px;
@@ -194,85 +199,78 @@ position: relative;
 `;
 
 const HomeImg=styled.img`
-max-width: 630px;
-height: auto;
-margin-top: 40px;
-margin-bottom: 100px;
+    max-width: 630px;
+    height: auto;
+    padding-top:40px;
+    padding-bottom:30px;
 @media (min-width: 992px) and (max-width: 1200px){
     width: 520px;
-    height: auto;
-    margin-top: 30px;
-    margin-bottom: 50px;
     }
 @media (min-width: 768px) and (max-width:992px){
     max-width: 360px;
-    height: auto;
     }
 @media (min-width:576px) and (max-width: 768px){
     max-width: 530px;
-    height: auto;
-    margin-top: 30px;
-    margin-bottom: 50px;
+    padding-top:40px;
+    padding-bottom:30px;
     }
 @media (min-width:480px) and (max-width: 576px){
     max-width: 440px;
-    margin-top: 30px;
-    margin-bottom: 50px;
+    padding-top:40px;
+    padding-bottom:30px;
     }
     @media (min-width:400px) and (max-width: 480px){
         max-width: 350px;
-        height: auto;
-        margin-top: 30px;
-        margin-bottom: 50px;   
+        padding-top:30px;
+        padding-bottom:30px;
         }
 `;
 
 const SubImg=styled.img`
-width: 580px;
-height: auto;
-margin-top: 100px;
-margin-bottom: 30px;
+    width: 560px;
+    height: auto;
+    padding-top: 95px;
 @media (min-width: 1200px) and (max-width: 1400px){
     width: 520px;
     height: auto;
     margin-top: 40px;
-    margin-bottom: 80px;
+
     }
 @media (min-width: 992px) and (max-width: 1200px){
     width: 450px;
     height: auto;
-    margin-top: 40px;
-    margin-bottom: 50px;
+    padding-top: 60px;
+   
     }
 @media (min-width: 768px) and (max-width:992px){
     width: 350px;
     height: auto;
-    margin-top: 110px;
-    margin-bottom: 30px;
+    padding-top: 80px;
+  
     }
 @media (min-width:576px) and (max-width: 768px){
     width: 510px;
     height: auto;
-    margin-top: 40px;
-    margin-bottom: 40px;
+    padding-top: 40px;
+  
     }
 @media (min-width:480px) and (max-width: 576px){
     max-width: 440px;
     height: auto;
-    margin-top: 40px;
-    margin-bottom: 50px;
+    padding-top: 40px;
+ 
     }
     @media (min-width:400px) and (max-width: 480px){
         max-width: 350px;
         height: auto;
-        margin-top: 30px;
-        margin-bottom: 50px;   
+        padding-top: 30px;
+     
         }
 `;
 
 const Process=styled.p`
-font-size: 20px;
-font-weight: 400;
+    font-size: 20px;
+    font-weight: 400;
 @media (min-width: 992px) and (max-width: 1200px){
     font-size: 18px;
     font-weight: 400;
@@ -341,6 +339,9 @@ function HomeComponent1(props,style){
 }
 
 
+
+
+
 function HomeComponent2(props){
     return(
         <React.Fragment>
@@ -363,6 +364,9 @@ function HomeComponent2(props){
         );
 }
 
+
+
+
 function HomeComponent3(props){
     return(
         <React.Fragment>
@@ -370,6 +374,9 @@ function HomeComponent3(props){
         </React.Fragment>
         );
 }
+
+
+
 function HomeComponent4(props){
     return(
         <React.Fragment>
@@ -377,14 +384,16 @@ function HomeComponent4(props){
         </React.Fragment>
         );
 }
+
+
 function HomeComponent5(props){
     return(
         <React.Fragment>
              <Heading className='py-3'>
-                <strong style={{color:'#FE432E'}}>Simple Process </strong><strong>To<br/>Make Order Your Favourite Foods/</strong>
+                <strong style={{color:'#FE432E'}}>Simple Process </strong><strong>To<br/>Make Order</strong>
             </Heading>
                 <br/>
-                    <Process><b>Step 1</b> <span style={{paddingLeft:'5px'}}><Processlogo src={props.icon1} alt='location'/></span><span style={{paddingLeft:'5px'}}> Set Your Location Frist</span></Process> 
+                    <Process><b>Step 1</b> <span style={{paddingLeft:'5px'}}><Processlogo  src={props.icon1} alt='location'/></span><span style={{paddingLeft:'5px'}}> Set Your Location Frist</span></Process> 
                     <Process><b>Step 2</b> <span style={{paddingLeft:'5px'}}><Processlogo  src={props.icon3} alt='location'/> </span><span style={{paddingLeft:'5px'}}>  Choose the Food You Want to Order</span></Process> 
                     <Process><b>Step 3</b> <span style={{paddingLeft:'5px'}}><Processlogo  src={props.icon2} alt='location'/> </span><span style={{paddingLeft:'5px'}}>  Confirm Order with Payment Method</span></Process> 
                           
