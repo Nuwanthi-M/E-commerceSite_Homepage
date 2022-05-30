@@ -8,6 +8,7 @@ import styled from 'styled-components';
 import logo from '../images/logo.png';
 import toggle from '../images/toggle.png';
 
+
 const Navlogo=styled.img`
     width: 100px;
     height: auto;
@@ -175,8 +176,7 @@ const MainContainer=styled.nav`
 function Navbar() {
 
     const history = useHistory();
-
-
+ 
   return (
        
     <React.Fragment>
@@ -220,7 +220,7 @@ function Navbar() {
                         <i className="fa fa-shopping-cart"></i>
                     </Navitem>
                     <Navitem className="nav-item">
-                        <LoginButton type="button" className="btn" onClick={() => history.push('./')}>Log In</LoginButton>
+                        <LoginButton type="button" className="btn" onClick={() => history.push('./')} >Log In</LoginButton>
                     </Navitem>
                     <Navitem className="nav-item">
                         <SignupButton type="button" className="btn" onClick={() => history.push('./')}>Sign Up</SignupButton>

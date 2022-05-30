@@ -1,6 +1,5 @@
 import React from "react";
 import styled from 'styled-components';
-
 import bell from '../images/bell.png';
 
 const Heading=styled.h1`
@@ -404,7 +403,6 @@ function HomeComponent5(props){
         </React.Fragment>
         );
 }
-
 
 
 export {HomeComponent1,HomeComponent2,HomeComponent3,HomeComponent4,HomeComponent5};

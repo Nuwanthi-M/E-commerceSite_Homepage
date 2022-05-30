@@ -76,9 +76,9 @@ const Line=styled.hr`
 `;
 function Footer(){
 
-    return(
-        <React.Fragment>
-            <MainContainer className='container-fluid'>
+return(
+    <React.Fragment>
+        <MainContainer className='container-fluid'>
                 <div className='container'>
                     <div className='row py-4'>
                         <div className='col-12 col-lg-4 col-sm-12'>
@@ -120,11 +120,11 @@ function Footer(){
                             <LastLine>Web Development By Computer Science Student- UOR</LastLine>  
                             <LastLine>@2021 All Right Reserved</LastLine>  
                         </div>
-                    </div>
-                        <br/><br/>                    
+                    </div>                     
                 </div>
-            </MainContainer>
-        </React.Fragment>
+            <br/>    
+        </MainContainer>
+    </React.Fragment>
             );
 }
 export default Footer;

@@ -3,11 +3,7 @@ import {ShopSection,DelivererSection,CustomerSection,CuroesulSection,Orderproces
 import Navbar from "../Navbar/navbar";
 import Footer from "../Footer/footer";
 
-
-
-
 function Home(){
-
     return(
         <div>
             <Navbar/>
